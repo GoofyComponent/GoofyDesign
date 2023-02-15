@@ -1,0 +1,43 @@
+@import "../design-tokens/typography.css";
+
+.goofydesign-title-large {
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_title-weight);
+  font-size: var(--goofydesign-typo_large-title-size);
+}
+
+.goofydesign-title-medium {
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_title-weight);
+  font-size: var(--goofydesign-typo_medium-title-size);
+}
+
+.goofydesign-title-small {
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_title-weight);
+  font-size: var(--goofydesign-typo_small-title-size);
+}
+
+.goofydesign-subtitle {
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_subtitle-weight);
+  font-size: var(--goofydesign-typo_subtitle-size);
+}
+
+.goofydesign-label {
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_label-weight);
+  font-size: var(--goofydesign-typo_label-size);
+}
+
+.goofydesign-button {
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_button-weight);
+  font-size: var(--goofydesign-typo_button-size);
+}
+
+.goofydesign-regular {
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_regular-weight);
+  font-size: var(--goofydesign-typo_regular-size);
+}

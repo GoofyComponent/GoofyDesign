@@ -7,7 +7,9 @@
   --goofydesign-typo_label-weight: 600;
   --goofydesign-typo_button-weight: 500;
   --goofydesign-typo_regular-weight: 400;
-  --goofydesign-typo_title-size: 2.25rem;
+  --goofydesign-typo_large-title-size: 3rem;
+  --goofydesign-typo_medium-title-size: 1.5rem;
+  --goofydesign-typo_small-title-size: 1rem;
   --goofydesign-typo_subtitle-size: 1.5rem;
   --goofydesign-typo_label-size: 1rem;
   --goofydesign-typo_button-size: 1rem;

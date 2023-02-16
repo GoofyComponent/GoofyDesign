@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
+import { ComponentLink } from "../components/Link/Link";
 
 import "../assets/css/pages/login.css";
 
@@ -39,6 +40,7 @@ export const PwdForget = () => {
             updateValue={setPassword}
           />
           <Button text={demoButtonText} action={handleSubmit} />
+          <ComponentLink text="Did you find your password? Log in !" PageName="/" />
         </form>
       </div>
     </section>

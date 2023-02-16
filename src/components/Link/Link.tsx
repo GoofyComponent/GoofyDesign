@@ -9,8 +9,10 @@ type LinkProps = {
 
 export const ComponentLink = ({ PageName, text = "default" }: LinkProps) => {
   return (
-    <Link to={PageName} className="goofy_link">
-      {text}
-    </Link>
+    <div className="goofy_link_box">
+      <Link to={PageName} className="goofy_link">
+        {text}
+      </Link>
+    </div>
   );
 };

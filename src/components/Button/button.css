@@ -3,7 +3,7 @@
 @import "../../assets/css/utilities/typography.css";
 
 .goofydesign_button {
-  width: 300px;
+  width: 330px;
   background-color: var(--goofydesign-color_primary);
   color: var(--goofydesign-color_bg-secondary);
   border-radius: var(--goofydesign-radius_normal);

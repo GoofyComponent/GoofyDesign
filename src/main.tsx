@@ -20,12 +20,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/pwdForget",
-    element: <PwdForget/>,
+    element: <PwdForget />,
   },
-  {
+  /* {
     path: "/test",
     element: <App />,
-  },
+  }, */
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

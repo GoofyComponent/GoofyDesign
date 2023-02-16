@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { TextInput } from "../components/TextInput/TextInput";
+import { Title } from "../components/Title/Title";
 
 function App() {
   const [email, setEmail] = useState("test@test.fr");
 
   return (
     <div className="App" style={{ width: "25rem" }}>
+      <Title
+        value="GoofyDesign"
+        level={2}
+        size="large"
+        color="tertiary"
+      />
       <TextInput
         title="Your mail"
         label="Email"

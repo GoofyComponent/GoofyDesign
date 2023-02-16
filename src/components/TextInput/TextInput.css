@@ -24,4 +24,5 @@
 
 .goofydesign_textinput_error {
   border-color: var(--goofydesign-color_error);
+  color: var(--goofydesign-color_error);
 }

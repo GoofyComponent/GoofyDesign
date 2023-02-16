@@ -10,6 +10,7 @@ type InputProps = {
   isTextArea?: boolean;
   title: string;
   placeholder?: string;
+  errorMessage?: string;
 };
 
 export const TextInput = ({
@@ -19,6 +20,7 @@ export const TextInput = ({
   isTextArea = false,
   title,
   placeholder,
+  errorMessage,
 }: InputProps) => {
   return (
     <div className="goofydesign_forminput">
@@ -43,6 +45,13 @@ export const TextInput = ({
             state === "error" && "goofydesign_textinput_error"
           )}
         />
+      )}
+      {state === "error" && errorMessage && (
+        <p
+          className={clsx("goofydesign_regular", "goofydesign_textinput_error")}
+        >
+          {errorMessage}
+        </p>
       )}
     </div>
   );

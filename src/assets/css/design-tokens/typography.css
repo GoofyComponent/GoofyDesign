@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --goofydesign-typo_font-family: "Poppins", sans-serif;
+  --goofydesign-typo_title-weight: 700;
+  --goofydesign-typo_subtitle-weight: 700;
+  --goofydesign-typo_label-weight: 600;
+  --goofydesign-typo_button-weight: 500;
+  --goofydesign-typo_regular-weight: 400;
+  --goofydesign-typo_large-title-size: 3rem;
+  --goofydesign-typo_medium-title-size: 1.5rem;
+  --goofydesign-typo_small-title-size: 1rem;
+  --goofydesign-typo_subtitle-size: 1.5rem;
+  --goofydesign-typo_label-size: 1rem;
+  --goofydesign-typo_button-size: 1rem;
+  --goofydesign-typo_regular-size: 0.625rem;
+}

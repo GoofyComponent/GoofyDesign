@@ -4,18 +4,24 @@
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_title-weight);
   font-size: var(--goofydesign-typo_large-title-size);
+  margin-top: var(--goofydesign-space_2);
+  margin-bottom: var(--goofydesign-space_2);
 }
 
 .goofydesign_title-medium {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_title-weight);
   font-size: var(--goofydesign-typo_medium-title-size);
+  margin-top: var(--goofydesign-space_2);
+  margin-bottom: var(--goofydesign-space_2);
 }
 
 .goofydesign_title-small {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_title-weight);
   font-size: var(--goofydesign-typo_small-title-size);
+  margin-top: var(--goofydesign-space_2);
+  margin-bottom: var(--goofydesign-space_2);
 }
 
 .goofydesign_subtitle {

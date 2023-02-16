@@ -12,7 +12,7 @@ type InputProps = {
   placeholder?: string;
   errorMessage?: string;
   value?: string;
-  updateValue?: Dispatch<SetStateAction<string>>;
+  updateValue: Dispatch<SetStateAction<string>>;
 };
 
 export const TextInput = ({

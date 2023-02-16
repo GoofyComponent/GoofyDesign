@@ -4,8 +4,12 @@ import { useState } from "react";
 import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
 import { ComponentLink } from "../components/Link/Link";
+import { Logo } from "../components/Logo/Logo";
 
 import "../assets/css/pages/login.css";
+
+import gfydsgn from "../assets/img/Logo.png";
+import { Title } from "../components/Title/Title";
 
 export const Register = () => {
   const [demoButtonText, setDemoButtonText] = useState("REGISTER");
@@ -27,8 +31,14 @@ export const Register = () => {
 
   return (
     <section id="login">
-      <div className={clsx("split")}></div>
-      <div className={clsx("split", "login-form-bg")}>
+      <div className={clsx("split")}>
+        <Logo size="large" value={gfydsgn} />
+        <Title value="GoofyCorner" size="large" level={1} color="secondary" />
+        <Title value="The authentic" size="medium" level={2} color="tertiary" />
+        <Title value="message app" size="medium" level={2} color="secondary" />
+        <Title value="Stay goof." size="small" level={2} color="tertiary" />
+      </div>
+      <div className={clsx("split", "form-bg")}>
         <form>
           <TextInput
             label="Email"
@@ -61,7 +71,10 @@ export const Register = () => {
             updateValue={setFirstname}
           />
           <Button text={demoButtonText} action={handleSubmit} />
-          <ComponentLink text="Already have an account ? Log in!" PageName="/" />
+          <ComponentLink
+            text="Already have an account ? Log in!"
+            PageName="/"
+          />
         </form>
       </div>
     </section>

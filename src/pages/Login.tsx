@@ -6,6 +6,9 @@ import { TextInput } from "../components/TextInput/TextInput";
 import { ComponentLink } from "../components/Link/Link";
 
 import "../assets/css/pages/login.css";
+import gfydsgn from "../assets/img/Logo.png";
+import { Logo } from "../components/Logo/Logo";
+import { Title } from "../components/Title/Title";
 
 export const Login = () => {
   const [demoButtonText, setDemoButtonText] = useState("Confirm");
@@ -24,8 +27,14 @@ export const Login = () => {
 
   return (
     <section id="login">
-      <div className={clsx("split")}></div>
-      <div className={clsx("split", "login-form-bg")}>
+      <div className={clsx("split")}>
+        <Logo size="large" value={gfydsgn} />
+        <Title value="GoofyCorner" size="large" level={1} color="secondary" />
+        <Title value="The authentic" size="medium" level={2} color="tertiary" />
+        <Title value="message app" size="medium" level={2} color="secondary" />
+        <Title value="Stay goof." size="small" level={2} color="tertiary" />
+      </div>
+      <div className={clsx("split", "form-bg")}>
         <form>
           <TextInput
             label="Email"
@@ -41,7 +50,10 @@ export const Login = () => {
           />
           <Button text={demoButtonText} action={handleSubmit} />
           <ComponentLink text="No account? Sign up!" PageName="/register" />
-          <ComponentLink text="Do you have forgotten your password ?" PageName="/pwdForget" />
+          <ComponentLink
+            text="Do you have forgotten your password ?"
+            PageName="/pwdForget"
+          />
         </form>
       </div>
     </section>

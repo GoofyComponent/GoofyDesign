@@ -1,11 +1,12 @@
 import "./Link.css";
-// import React from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
 
-function Link() {
+function Link(props: any) {
   return (
-    <div className="Link">
-      <p>Already signed in ? Log here !</p>
-    </div>
+    <a href={props.href} className="goofy_link">
+      {props.children}
+    </a>
   );
 }
+
+export default Link;

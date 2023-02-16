@@ -1,2 +1,20 @@
-.Link {
+@import "../../assets/css/design-tokens/base-colors.css";
+@import "../../assets/css/design-tokens/typography.css";
+@import "../../assets/css/design-tokens/spacing.css";
+
+.goofy_link {
+  color: var(--goofydesign-color-primary);
+  text-decoration: none;
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_regular-weight);
+  font-size: var(--goofydesign-typo_regular-size);
+  margin: var(--goofydesign-spacing-xxs);
+}
+
+.goofy_link:hover {
+  text-decoration: underline;
+}
+
+.goofy_link:active {
+  color: var(--goofydesign-color-primary-lighter);
 }

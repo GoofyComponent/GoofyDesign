@@ -44,3 +44,23 @@
   font-weight: var(--goofydesign-typo_regular-weight);
   font-size: var(--goofydesign-typo_regular-size);
 }
+
+.goofydesign_font-color_primary {
+  color: var(--goofydesign-color_primary);
+}
+
+.goofydesign_font-color_secondary {
+  color: var(--goofydesign-color_secondary);
+}
+
+.goofydesign_font-color_tertiary {
+  color: var(--goofydesign-color_tertiary);
+}
+
+.goofydesign_font-color_error {
+  color: var(--goofydesign-color_error);
+}
+
+.goofydesign_font-color_disable {
+  color: var(--goofydesign-color_disable);
+}

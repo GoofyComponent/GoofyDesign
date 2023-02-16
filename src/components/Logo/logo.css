@@ -1,0 +1,16 @@
+@import "../../assets/css/design-tokens/radius.css";
+
+.goofydesign_logo-large {
+    width: 300px;
+    height: 300px;
+}
+
+.goofydesign_logo-medium {
+    width: 150px;
+    height: 150px;
+}
+
+.goofydesign_logo-small {
+    width: 50px;
+    height: 50px;
+}

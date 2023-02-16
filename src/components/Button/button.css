@@ -1,0 +1,24 @@
+@import "../../assets/css/design-tokens/base-colors.css";
+@import "../../assets/css/design-tokens/radius.css";
+@import "../../assets/css/utilities/typography.css";
+
+.goofydesign_button {
+  width: 100%;
+  background-color: var(--goofydesign-color_primary);
+  color: var(--goofydesign-color_bg-secondary);
+  border-radius: var(--goofydesign-radius_normal);
+  border: 1px solid var(--goofydesign-color_tertiary);
+  transition: background-color 0.2s ease-in-out;
+  padding-top: var(--goofydesign-space_0-5);
+  padding-bottom: var(--goofydesign-space_0-5);
+  margin-top: var(--goofydesign-space_4);
+  margin-bottom: var(--goofydesign-space_2);
+}
+
+.goofydesign_button:hover {
+  background-color: var(--goofydesign-color_tertiary);
+}
+
+.goofydesign_button:active {
+  border: 1px solid var(--goofydesign-color_primary);
+}

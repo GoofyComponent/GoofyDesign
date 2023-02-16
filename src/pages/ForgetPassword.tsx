@@ -4,27 +4,23 @@ import { useState } from "react";
 import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
 import { ComponentLink } from "../components/Link/Link";
-import { Logo } from "../components/Logo/Logo";
-
-import "../assets/css/pages/login.css";
 
 import gfydsgn from "../assets/img/Logo.png";
+import "../assets/css/pages/login.css";
+import { Logo } from "../components/Logo/Logo";
 import { Title } from "../components/Title/Title";
 
-export const Register = () => {
-  const [demoButtonText, setDemoButtonText] = useState("REGISTER");
+export const PwdForget = () => {
+  const [demoButtonText, setDemoButtonText] = useState("Confirm");
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [username, setUsername] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setDemoButtonText("LOADING...");
     setTimeout(() => {
-      setDemoButtonText("REGISTER");
+      setDemoButtonText("LOGIN");
     }, 5000);
     console.log("submit");
   };
@@ -41,38 +37,20 @@ export const Register = () => {
       <div className={clsx("split", "form-bg")}>
         <form>
           <TextInput
-            label="Email"
+            label="New Password"
             title="Your mail"
             value={email}
             updateValue={setEmail}
           />
           <TextInput
-            label="Password"
+            label="Confirm Password"
             title="Your password"
             value={password}
             updateValue={setPassword}
           />
-          <TextInput
-            label="Username"
-            title="Your Username"
-            value={password}
-            updateValue={setUsername}
-          />
-          <TextInput
-            label="Last Name"
-            title="Your Name"
-            value={password}
-            updateValue={setLastname}
-          />
-          <TextInput
-            label="First Name"
-            title="Your First Name"
-            value={password}
-            updateValue={setFirstname}
-          />
           <Button text={demoButtonText} action={handleSubmit} />
           <ComponentLink
-            text="Already have an account ? Log in!"
+            text="Did you find your password? Log in !"
             PageName="/"
           />
         </form>

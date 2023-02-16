@@ -1,0 +1,36 @@
+@import "../../assets/css/utilities/typography.css";
+@import "../../assets/css/design-tokens/base-colors.css";
+@import "../../assets/css/design-tokens/spacings.css";
+@import "../../assets/css/design-tokens/radius.css";
+
+.goofydesign_forminput {
+  margin-top: var(--goofydesign-space_8);
+  margin-bottom: var(--goofydesign-space_2);
+}
+
+.goofydesign_textinput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: var(--goofydesign-space_2);
+  border: 2px solid var(--goofydesign-color_secondary);
+  border-radius: var(--goofydesign-radius_normal);
+  height: var(--goofydesign-space_10);
+  margin-top: var(--goofydesign-space_2);
+}
+
+.goofydesign_textinput:focus {
+  border-color: var(--goofydesign-color_bg-main);
+}
+
+.goofydesign_textinput_error {
+  border-color: var(--goofydesign-color_error);
+  color: var(--goofydesign-color_error);
+}
+
+.goofydesign_textinput_disabled {
+  border-color: var(--goofydesign-color_disable);
+  background-color: var(--goofydesign-color_disable);
+}

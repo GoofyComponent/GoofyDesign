@@ -2,25 +2,28 @@ import clsx from "clsx";
 
 import "./TextInput.css";
 import "../../assets/css/utilities/typography.css";
+import { Dispatch, SetStateAction } from "react";
 
 type InputProps = {
   state?: string;
   label?: string;
-  labelPosition?: string;
   isTextArea?: boolean;
   title: string;
   placeholder?: string;
   errorMessage?: string;
+  value?: string;
+  updateValue?: Dispatch<SetStateAction<string>>;
 };
 
 export const TextInput = ({
   state = "default",
   label,
-  labelPosition = "center",
   isTextArea = false,
   title,
   placeholder,
   errorMessage,
+  value,
+  updateValue,
 }: InputProps) => {
   return (
     <div className="goofydesign_forminput">
@@ -31,8 +34,15 @@ export const TextInput = ({
           placeholder={placeholder && placeholder}
           className={clsx(
             "goofydesign_textinput",
-            state === "error" && "goofydesign_textinput_error"
+            "goofydesign_regular",
+            state === "error" && "goofydesign_textinput_error",
+            state === "disabled" && "goofydesign_textinput_disabled"
           )}
+          value={value && value}
+          disabled={state === "disabled" && true}
+          onChange={(e) => {
+            updateValue(e.target.value);
+          }}
         />
       )}
       {!isTextArea && (
@@ -42,8 +52,15 @@ export const TextInput = ({
           placeholder={placeholder && placeholder}
           className={clsx(
             "goofydesign_textinput",
-            state === "error" && "goofydesign_textinput_error"
+            "goofydesign_regular",
+            state === "error" && "goofydesign_textinput_error",
+            state === "disabled" && "goofydesign_textinput_disabled"
           )}
+          disabled={state === "disabled" && true}
+          value={value && value}
+          onChange={(e) => {
+            updateValue(e.target.value);
+          }}
         />
       )}
       {state === "error" && errorMessage && (

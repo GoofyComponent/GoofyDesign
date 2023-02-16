@@ -1,42 +1,45 @@
 @import "../design-tokens/typography.css";
 
-.goofydesign-title-large {
+.goofydesign_title-large {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_title-weight);
   font-size: var(--goofydesign-typo_large-title-size);
 }
 
-.goofydesign-title-medium {
+.goofydesign_title-medium {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_title-weight);
   font-size: var(--goofydesign-typo_medium-title-size);
 }
 
-.goofydesign-title-small {
+.goofydesign_title-small {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_title-weight);
   font-size: var(--goofydesign-typo_small-title-size);
 }
 
-.goofydesign-subtitle {
+.goofydesign_subtitle {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_subtitle-weight);
   font-size: var(--goofydesign-typo_subtitle-size);
 }
 
-.goofydesign-label {
+.goofydesign_label {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_label-weight);
   font-size: var(--goofydesign-typo_label-size);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.goofydesign-button {
+.goofydesign_button {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_button-weight);
   font-size: var(--goofydesign-typo_button-size);
 }
 
-.goofydesign-regular {
+.goofydesign_regular {
   font-family: var(--goofydesign-typo_font-family);
   font-weight: var(--goofydesign-typo_regular-weight);
   font-size: var(--goofydesign-typo_regular-size);

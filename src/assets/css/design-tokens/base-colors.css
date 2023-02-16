@@ -1,8 +1,8 @@
-:root{
-    --goofydesign-color_primary:"#000000";
-    --goofydesign-color_secondary:"#FFFFFF",
-    --goofydesign-color_bg-main:"#073A55",
-    --goofydesign-color_bg-secondary:"#AED3EA";
-    --goofydesign-color_tertiary:"#5FA7D4",
-    --goofydesign-color_error:"#FF1C1C",
+:root {
+  --goofydesign-color_primary: #000000;
+  --goofydesign-color_secondary: #ffffff;
+  --goofydesign-color_bg-main: #073a55;
+  --goofydesign-color_bg-secondary: #aed3ea;
+  --goofydesign-color_tertiary: #5fa7d4;
+  --goofydesign-color_error: #ff1c1c;
 }

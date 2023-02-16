@@ -5,7 +5,10 @@ import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
 import { ComponentLink } from "../components/Link/Link";
 
+import gfydsgn from "../assets/img/Logo.png";
 import "../assets/css/pages/login.css";
+import { Logo } from "../components/Logo/Logo";
+import { Title } from "../components/Title/Title";
 
 export const PwdForget = () => {
   const [demoButtonText, setDemoButtonText] = useState("Confirm");
@@ -24,8 +27,14 @@ export const PwdForget = () => {
 
   return (
     <section id="login">
-      <div className={clsx("split")}></div>
-      <div className={clsx("split", "login-form-bg")}>
+      <div className={clsx("split")}>
+        <Logo size="large" value={gfydsgn} />
+        <Title value="GoofyCorner" size="large" level={1} color="secondary" />
+        <Title value="The authentic" size="medium" level={2} color="tertiary" />
+        <Title value="message app" size="medium" level={2} color="secondary" />
+        <Title value="Stay goof." size="small" level={2} color="tertiary" />
+      </div>
+      <div className={clsx("split", "form-bg")}>
         <form>
           <TextInput
             label="New Password"
@@ -40,7 +49,10 @@ export const PwdForget = () => {
             updateValue={setPassword}
           />
           <Button text={demoButtonText} action={handleSubmit} />
-          <ComponentLink text="Did you find your password? Log in !" PageName="/" />
+          <ComponentLink
+            text="Did you find your password? Log in !"
+            PageName="/"
+          />
         </form>
       </div>
     </section>

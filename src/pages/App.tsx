@@ -16,23 +16,14 @@ function App() {
 
   return (
     <div className="App" style={{ width: "25rem" }}>
-      <Logo
-        size="small"
-        value={Image}
-      />
-      <Title
-        value="GoofyDesign"
-        level={2}
-        size="large"
-        color="tertiary"
-      />
+      <Logo size="small" value={Image} />
+      <Title value="GoofyDesign" level={2} size="large" color="tertiary" />
       <TextInput
         title="Your mail"
         label="Email"
         value={email}
         updateValue={setEmail}
       />
-      <TextInput title="Your password" label="Email" state="disabled" />
     </div>
   );
 }

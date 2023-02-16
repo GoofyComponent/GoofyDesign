@@ -1,0 +1,22 @@
+@import "../../assets/css/design-tokens/base-colors.css";
+@import "../../assets/css/design-tokens/typography.css";
+@import "../../assets/css/design-tokens/spacings.css";
+
+.goofy_link {
+  color: var(--goofydesign-color-primary);
+  font-family: var(--goofydesign-typo_font-family);
+  font-weight: var(--goofydesign-typo_regular-weight);
+  font-size: var(--goofydesign-typo_regular-size);
+  margin: var(--goofydesign-space_0);
+  text-align: center;
+  text-decoration: none;
+}
+
+.goofy_link:hover {
+  text-decoration: underline;
+}
+
+.goofy_link:active {
+  color: var(--goofydesign-color-tertiary);
+  opacity: 35%;
+}

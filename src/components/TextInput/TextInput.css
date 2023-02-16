@@ -1,0 +1,16 @@
+@import "../../assets/css/design-tokens/base-colors.css";
+@import "../../assets/css/utilities/typography.css";
+
+.goofydesign_textinput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0.5rem;
+  border-color: var(--goofydesign-color_bg-secondary);
+  border-width: 2px;
+  border-radius: 0.375rem;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+}

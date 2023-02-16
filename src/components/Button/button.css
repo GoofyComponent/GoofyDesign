@@ -5,12 +5,14 @@
 .goofydesign_button {
   width: 300px;
   background-color: var(--goofydesign-color_primary);
-  color: var(--goofydesign-color_secondary);
+  color: var(--goofydesign-color_bg-secondary);
   border-radius: var(--goofydesign-radius_normal);
   border: 1px solid var(--goofydesign-color_tertiary);
   transition: background-color 0.2s ease-in-out;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-top: var(--goofydesign-space_4);
+  margin-bottom: var(--goofydesign-space_2);
 }
 
 .goofydesign_button:hover {

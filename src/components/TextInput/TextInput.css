@@ -4,7 +4,7 @@
 @import "../../assets/css/design-tokens/radius.css";
 
 .goofydesign_forminput {
-  margin-top: var(--goofydesign-space_2);
+  margin-top: var(--goofydesign-space_8);
   margin-bottom: var(--goofydesign-space_2);
 }
 

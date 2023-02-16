@@ -7,6 +7,7 @@ import App from "./pages/App";
 import "./assets/css/utilities/index.css";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
+import { PwdForget } from "./pages/ForgetPassword";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/pwdForget",
+    element: <PwdForget/>,
   },
   {
     path: "/test",

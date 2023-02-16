@@ -7,7 +7,7 @@ import { TextInput } from "../components/TextInput/TextInput";
 import "../assets/css/pages/login.css";
 
 export const Login = () => {
-  const [demoButtonText, setDemoButtonText] = useState("LOGIN");
+  const [demoButtonText, setDemoButtonText] = useState("Confirm");
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

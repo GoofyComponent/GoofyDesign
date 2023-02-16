@@ -1,10 +1,12 @@
+import clsx from "clsx";
 import { useState } from "react";
+
 import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
 
 import "../assets/css/pages/login.css";
 
-export const Register = () => {
+export const PwdForget = () => {
   const [demoButtonText, setDemoButtonText] = useState("Confirm");
 
   const [email, setEmail] = useState("");
@@ -21,35 +23,17 @@ export const Register = () => {
 
   return (
     <section id="login">
-      <div className="split"></div>
-      <div className="split login-form-bg">
+      <div className={clsx("split")}></div>
+      <div className={clsx("split", "login-form-bg")}>
         <form>
           <TextInput
-            label="Email"
+            label="New Password"
             title="Your mail"
             value={email}
             updateValue={setEmail}
           />
           <TextInput
-            label="Password"
-            title="Your password"
-            value={password}
-            updateValue={setPassword}
-          />
-          <TextInput
-            label="Username"
-            title="Your password"
-            value={password}
-            updateValue={setPassword}
-          />
-          <TextInput
-            label="Last Name"
-            title="Your password"
-            value={password}
-            updateValue={setPassword}
-          />
-          <TextInput
-            label="First Name"
+            label="Confirm Password"
             title="Your password"
             value={password}
             updateValue={setPassword}

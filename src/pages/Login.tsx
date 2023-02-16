@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
+import { ComponentLink } from "../components/Link/Link";
 
 import "../assets/css/pages/login.css";
 
@@ -39,6 +40,8 @@ export const Login = () => {
             updateValue={setPassword}
           />
           <Button text={demoButtonText} action={handleSubmit} />
+          <ComponentLink text="No account? Sign up!" PageName="/register" />
+          <ComponentLink text="Do you have forgotten your password ?" PageName="/pwdForget" />
         </form>
       </div>
     </section>

@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
+import { ComponentLink } from "../components/Link/Link";
 
 import "../assets/css/pages/login.css";
 
@@ -60,6 +61,7 @@ export const Register = () => {
             updateValue={setFirstname}
           />
           <Button text={demoButtonText} action={handleSubmit} />
+          <ComponentLink text="Already have an account ? Log in!" PageName="/" />
         </form>
       </div>
     </section>

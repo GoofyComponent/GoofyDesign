@@ -1,28 +1,33 @@
+import clsx from "clsx";
 import { useState } from "react";
+
 import { Button } from "../components/Button/Button";
 import { TextInput } from "../components/TextInput/TextInput";
 
 import "../assets/css/pages/login.css";
 
 export const Register = () => {
-  const [demoButtonText, setDemoButtonText] = useState("Confirm");
+  const [demoButtonText, setDemoButtonText] = useState("REGISTER");
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [username, setUsername] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setDemoButtonText("LOADING...");
     setTimeout(() => {
-      setDemoButtonText("LOGIN");
+      setDemoButtonText("REGISTER");
     }, 5000);
     console.log("submit");
   };
 
   return (
     <section id="login">
-      <div className="split"></div>
-      <div className="split login-form-bg">
+      <div className={clsx("split")}></div>
+      <div className={clsx("split", "login-form-bg")}>
         <form>
           <TextInput
             label="Email"
@@ -38,21 +43,21 @@ export const Register = () => {
           />
           <TextInput
             label="Username"
-            title="Your password"
+            title="Your Username"
             value={password}
-            updateValue={setPassword}
+            updateValue={setUsername}
           />
           <TextInput
             label="Last Name"
-            title="Your password"
+            title="Your Name"
             value={password}
-            updateValue={setPassword}
+            updateValue={setLastname}
           />
           <TextInput
             label="First Name"
-            title="Your password"
+            title="Your First Name"
             value={password}
-            updateValue={setPassword}
+            updateValue={setFirstname}
           />
           <Button text={demoButtonText} action={handleSubmit} />
         </form>
